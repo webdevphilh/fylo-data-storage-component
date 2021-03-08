@@ -1,0 +1,99 @@
+$paleBlue: hsl(243, 100%, 93%);
+$grayishBlue: hsl(229, 7%, 55%);
+$darkBlue: hsl(228, 56%, 26%);
+$veryDarkBlue: hsl(229, 57%, 11%);
+
+//Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+*{
+    //border: 1px solid greenyellow;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;        //400 700
+    font-size: 14px;
+    background: url("../images/bg-desktop.png");
+    width: 100vw;
+    height: 100vh;
+    background-color: $veryDarkBlue;
+    background-repeat: no-repeat;
+    background-size: 100vw 50vh;
+    background-position: bottom;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: $darkBlue;
+        min-height: 10em;
+        min-width: 25em;
+        border-radius: 1em;
+        border-top-right-radius: 6em;
+
+        .logo{
+            margin: 2em 0 1.5em 2em;
+            width: fit-content;
+        }
+
+        .links{
+            display: flex;
+            height: 4em;
+            margin-left: 2em;
+
+            .symbol-link{
+                height: 1.2em;
+                padding: 0.7em;
+                //margin: 0 1em;
+                margin-right: 1.5em;
+                background-color: $veryDarkBlue;
+                border-radius: .5em;
+            }
+        }   
+    }
+
+    .process{
+        
+        background-color: $darkBlue;
+        border-radius: 1em;
+        color: white;
+        padding: 2em;
+        //display: flex;
+
+        > *{
+            //border: 1px solid greenyellow;
+        }
+
+        .big-text{
+            font-weight: 700;
+        }
+
+        div{
+            //display: flex;
+            //width: 100%;
+            border: 1px solid greenyellow;
+            //.start-cap{
+            //    align-self: flex-start;
+            //}
+            .max-cap{
+                border: 1px solid greenyellow;
+                text-align: end;
+            }
+        }
+
+
+        .popup{
+            display: none;
+        }
+    }
+}
